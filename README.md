@@ -8,14 +8,22 @@ make&&make clean
 
 ./sXPath data/example.xml
 
-EXPRESSION: /bookstore/book[price>25.00]/author       
+EXPRESSION: /bookstore/book[price>25.00]/author
 RESULT:
-Zülfü Livaneli
+<author>Zülfü Livaneli</author>
 
 EXPRESSION: //book
 RESULT:
-<title lang="en">The Call Of The Wild</title>
-<title lang="tr">Serenat</title>
+<book>
+  <title lang="en">The Call Of The Wild</title>
+  <author>Jack London</author>
+  <price>13.52</price>
+</book>
+<book>
+  <title lang="tr">Serenat</title>
+  <author>Zülfü Livaneli</author>
+  <price>25.08</price>
+</book>
 
 EXPRESSION: :QUIT
 

@@ -59,7 +59,7 @@ int main(int argc, char **argv) {
                 nodeset = result->nodesetval;
                 for( i = 0 ; i < nodeset->nodeNr ; i++){
                     xmlBufferPtr buffer = xmlBufferCreate();
-                    xmlNodeDump(buffer, doc, nodeset->nodeTab[i]->xmlChildrenNode, 0, 1);
+                    xmlNodeDump(buffer, doc, nodeset->nodeTab[i], 0, 1);
                     printf("%s\n", buffer->content);
                     xmlFree(buffer);
                 }

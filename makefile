@@ -7,12 +7,12 @@ LIBS = -lxml2
 OBJS = main.o 
 
 $(PROG) : $(OBJS)
-	$(CC) $(CCFLAGS) $(LIB_PATHS) $(LIBS) -o $(PROG) $(OBJS)
+$(CC) $(CCFLAGS) $(LIB_PATHS) $(LIBS) -o $(PROG) $(OBJS)
 
 main.o : main.c
-	$(CC) $(INCLUDE_PATHS) -c main.c
+$(CC) $(INCLUDE_PATHS) -c main.c
 
 clean:
-	rm -f $(OBJS)
+rm -f $(OBJS)
 clean-all :
-	rm -f $(PROG) $(OBJS)
+rm -f $(PROG) $(OBJS) 

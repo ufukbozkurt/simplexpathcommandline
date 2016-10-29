@@ -1,6 +1,6 @@
 Very Simple XPath Command Line Tool
 
-XPath commnad line query tool, written in C and dependent to libxml2. "makefile" may need to be modified for different library locations.
+XPath command line query tool, written in C and dependent to libxml2. "makefile" may need to be modified for different library locations.
 It includes example data under "data" folder. 
 
 ```bash

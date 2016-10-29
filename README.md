@@ -20,3 +20,5 @@ RESULT:
 EXPRESSION: :QUIT
 
 ```
+
+Note that, xpath expressions should always start with "/" or "//".
